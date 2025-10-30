@@ -1,0 +1,102 @@
+
+#menu {
+  height: 100vh;
+  padding: 4rem 2rem;
+  background: url('https://cdn.pixabay.com/photo/2024/03/22/18/29/ai-generated-8650276_1280.png') center/cover no-repeat;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 0;
+}
+
+#menu h2,
+.menu-container {
+  position: relative;
+  z-index: 1;
+}
+
+#menu h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+
+.menu-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  background: rgba(255,244,236,0.92);
+  border-radius: 10px;
+  padding: 1.4rem;
+  width: 250px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform .3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-6px);
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+
+.menu-item h3 {
+  color: #b85c38;
+  margin-bottom: .5rem;
+}
+
+.menu-item p {
+  color: #444;
+  font-size: 0.9rem;
+}
+header {
+  background: #f4e1d2;
+  padding: 0.5rem 1.5rem; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 1.5rem; 
+  color: #b85c38;
+}
+
+nav a {
+  margin-left: 1rem; 
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+  color: #b85c38;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: #8b3d2e;
+}
